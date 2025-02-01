@@ -8,11 +8,23 @@ hierarchies:
       - unique_name: Parent Brand
       - unique_name: Store Type
       - unique_name: Store
-  - unique_name: Store Locations Hierarchy
-    label: Store Locations Hierarchy
-    levels:
-      - unique_name: Stores Region
-      - unique_name: Stores Location
+        secondary_attributes:
+          - unique_name: Stores Region
+            label: Stores Region
+            contains_unique_names: false
+            dataset: dim_stores
+            is_unique_key: false
+            key_columns:
+              - store_region
+            name_column: store_region
+          - unique_name: Stores Location
+            label: Stores Location
+            contains_unique_names: false
+            dataset: dim_stores
+            is_unique_key: false
+            key_columns:
+              - store_location
+            name_column: store_location
 level_attributes:
   - unique_name: Parent Brand
     label: Parent Brand
@@ -39,20 +51,4 @@ level_attributes:
     key_columns:
       - store_id
     name_column: store_name
-  - unique_name: Stores Region
-    label: Stores Region
-    contains_unique_names: false
-    dataset: dim_stores
-    is_unique_key: false
-    key_columns:
-      - store_region
-    name_column: store_region
-  - unique_name: Stores Location
-    label: Stores Location
-    contains_unique_names: false
-    dataset: dim_stores
-    is_unique_key: false
-    key_columns:
-      - store_location
-    name_column: store_location
 type: standard
