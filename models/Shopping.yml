@@ -1,0 +1,38 @@
+unique_name: Shopping
+object_type: model
+label: Shopping
+metrics:
+  - unique_name: Total Orders
+relationships:
+  - unique_name: fact_receipts_customer_id_to_Customers_Customers Level
+    from:
+      dataset: fact_receipts
+      join_columns:
+        - customer_id
+    to:
+      dimension: Customers
+      level: Customers Level
+  - unique_name: fact_receipts_product_id_to_Product_Product
+    from:
+      dataset: fact_receipts
+      join_columns:
+        - product_id
+    to:
+      dimension: Product
+      level: Product
+  - unique_name: fact_receipts_store_id_to_Stores_Store
+    from:
+      dataset: fact_receipts
+      join_columns:
+        - store_id
+    to:
+      dimension: Stores
+      level: Store
+  - unique_name: fact_receipts_trip_id_to_Trips_Trips
+    from:
+      dataset: fact_receipts
+      join_columns:
+        - trip_id
+    to:
+      dimension: Trips
+      level: Trips

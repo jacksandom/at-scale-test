@@ -1,0 +1,14 @@
+unique_name: dim_customers
+object_type: dataset
+label: dim_customers
+columns:
+  - name: customer_id
+    data_type: string
+  - name: age
+    data_type: long
+  - name: gender
+    data_type: string
+  - name: city
+    data_type: string
+connection_id: con_jack_sandom_shopping_semantics_schema
+table: dim_customers

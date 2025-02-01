@@ -1,0 +1,7 @@
+unique_name: Total Orders
+object_type: metric
+label: Total Orders
+calculation_method: sum
+column: total_price
+dataset: fact_receipts
+format: £#,##0.00

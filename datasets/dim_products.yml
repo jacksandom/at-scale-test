@@ -1,0 +1,18 @@
+unique_name: dim_products
+object_type: dataset
+label: dim_products
+columns:
+  - name: product_id
+    data_type: string
+  - name: category
+    data_type: string
+  - name: sub_category
+    data_type: string
+  - name: brand
+    data_type: string
+  - name: product_line
+    data_type: string
+  - name: product
+    data_type: string
+connection_id: con_jack_sandom_shopping_semantics_schema
+table: dim_products

@@ -1,0 +1,18 @@
+unique_name: dim_stores
+object_type: dataset
+label: dim_stores
+columns:
+  - name: store_id
+    data_type: string
+  - name: parent_brand
+    data_type: string
+  - name: store_type
+    data_type: string
+  - name: store_name
+    data_type: string
+  - name: store_location
+    data_type: string
+  - name: store_region
+    data_type: string
+connection_id: con_jack_sandom_shopping_semantics_schema
+table: dim_stores

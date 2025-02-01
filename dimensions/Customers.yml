@@ -1,0 +1,43 @@
+unique_name: Customers
+object_type: dimension
+label: Customers
+hierarchies:
+  - unique_name: Customers Hierarchy
+    label: Customers Hierarchy
+    levels:
+      - unique_name: Customers Level
+        secondary_attributes:
+          - unique_name: Age
+            label: Age
+            contains_unique_names: false
+            dataset: dim_customers
+            is_unique_key: false
+            key_columns:
+              - age
+            name_column: age
+          - unique_name: Gender
+            label: Gender
+            contains_unique_names: false
+            dataset: dim_customers
+            is_unique_key: false
+            key_columns:
+              - gender
+            name_column: gender
+          - unique_name: City
+            label: City
+            contains_unique_names: false
+            dataset: dim_customers
+            is_unique_key: false
+            key_columns:
+              - city
+            name_column: city
+level_attributes:
+  - unique_name: Customers Level
+    label: Customers Level
+    contains_unique_names: false
+    dataset: dim_customers
+    is_unique_key: true
+    key_columns:
+      - customer_id
+    name_column: customer_id
+type: standard

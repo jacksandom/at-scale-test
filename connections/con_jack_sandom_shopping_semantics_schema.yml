@@ -1,0 +1,6 @@
+unique_name: con_jack_sandom_shopping_semantics_schema
+object_type: connection
+label: con_jack_sandom_shopping_semantics_schema
+as_connection: DBX Field Eng East
+database: jack_sandom
+schema: shopping_semantics_schema

@@ -1,0 +1,10 @@
+unique_name: dim_trips
+object_type: dataset
+label: dim_trips
+columns:
+  - name: trip_id
+    data_type: string
+  - name: trip_datetime
+    data_type: datetime
+connection_id: con_jack_sandom_shopping_semantics_schema
+table: dim_trips

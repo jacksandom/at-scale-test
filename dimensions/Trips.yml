@@ -1,0 +1,19 @@
+unique_name: Trips
+object_type: dimension
+label: Trips
+hierarchies:
+  - unique_name: Trips Hierarchy
+    label: Trips Hierarchy
+    levels:
+      - unique_name: Trips
+level_attributes:
+  - unique_name: Trips
+    label: Trips
+    contains_unique_names: false
+    dataset: dim_trips
+    is_unique_key: true
+    key_columns:
+      - trip_id
+    name_column: trip_id
+    sort_column: trip_datetime
+type: standard
